@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Aévia Enchanting offers handcrafted crochet bouquets and personalized gifts made with care in General Santos City. Discover everlasting, eco-friendly flower arrangements perfect for birthdays, anniversaries, weddings, and all special occasions.">
+    <meta name="keywords" content="HTML, CSS, crochet bouquets, handmade flowers, everlasting bouquets, crochet roses, handcrafted flowers, custom bouquets, crochet gifts, wedding bouquets, birthday gifts, anniversary gifts, Valentines gifts, General Santos City, GenSan gifts, South Cotabato, Philippines, eco-friendly flowers, sustainable bouquets, yarn flowers, artificial flowers, forever blooming, Aévia Enchanting, personalized gifts, handmade crafts, crochet art, floral arrangements, creative gift shop, unique bouquet designs, gifting ideas Philippines">
+    <meta name="author" content="John Mark R. Kalugay">
+    <link rel="stylesheet" href="cdn/webfonts/all.min.css">
+    <title>Aévia Enchanting</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/AE.jpg">
+    <link rel="stylesheet" href="Styles/AeviaEnStyles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <a href="#" class="logo">Aévia Enchanting<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="Index.html">Home</a>
+            <a href="src/About.html">About</a>
+            <a href="src/Products.html">Product</a>
+            <a href="src/Reviews.html">Review</a>
+            <a href="src/Contact.html">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <abbr title="Wish list"><a class="fas fa-heart" onclick="alert('Coming soon!')"></a></abbr>
+            <abbr title="Cart"><a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a></abbr>
+            <abbr title="User Account"><a class="fas fa-user" onclick="document.getElementById('login-01').style.display='block'"></a></abbr> 
+        </div>
+    </header>
+
+    <!--Modal Login-->
+    <div id="login-01" class="modal-01">
+        <a href="#close" class="modal-backdrop" onclick="document.getElementById('login-01').style.display='none'"></a>
+        <div class="modal-container-login">
+            <abbr title="close"><a href="#close" class="modal-close2" aria-label="Close" onclick="document.getElementById('login-01').style.display='none'">&times;</a></abbr>
+            <div class="modal-content">
+
+                <div class="modal-body-login">
+                    <div class="login-form-section">
+                        <div class="login-form">
+                            <h3>Login Form</h3>
+                            <form class="login-form-content" action="MessageHTML/Loginform.html">
+                                <div class="form-group-login">
+                                    <label>Username</label>
+                                    <input type="text" name="username" placeholder="Enter Username" required>
+                                    <label>Password</label>
+                                    <input type="password" name="password" placeholder="Enter Password" required>
+                                </div>
+                                <label class="remember-me">
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me 
+                                </label>
+                                <span class="psw"><a href="#">Forgot Password?</a></span>
+                                <button type="submit" class="Submitbtn">Submit</button>
+
+                            </form>
+                            <div class="container">
+                                <span class="DNT">Don't have an account? <a href="#" class="refa" onclick="document.getElementById('login-01').style.display='none'; document.getElementById('register-01').style.display='block'">Sign up here</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of Modal Login-->
+    
+    <!--Modal Register-->
+     <div id="register-01" class="modal-02">
+        <a href="#close" class="modal-backdrop" onclick="document.getElementById('register-01').style.display='none'"></a>
+        <div class="modal-container-login">
+            <abbr title="close"><a href="#close" class="modal-close2" aria-label="Close" onclick="document.getElementById('register-01').style.display='none'">&times;</a></abbr>
+            <div class="modal-content">
+
+                <div class="modal-body-login">
+                    <div class="login-form-section">
+                        <div class="login-form">
+                            <h3>Register Form</h3>
+                            <form class="login-form-content" action="MessageHTML/Register.html">
+                                <div class="form-group-login">
+                                    <label>Username</label>
+                                    <input type="text" name="username" placeholder="Enter Username" required>
+                                    <label>Email</label>
+                                    <input type="email" name="email" placeholder="Enter Email" required>
+                                    <label>Password</label>
+                                    <input type="password" name="password" placeholder="Enter Password" required>
+                                    <label>Confirm Password</label>
+                                    <input type="password" name="password" placeholder="Enter Password" required>
+                                </div>
+                                <button type="submit" class="Submitbtn">Submit</button>
+
+                            </form>
+                            <div class="container">
+                                <span class="DNT">Have already an account? <a href="#" class="refa" onclick="document.getElementById('register-01').style.display='none'; document.getElementById('login-01').style.display='block'">Login here</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of Modal Register-->
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Aévia Enchanting</h3>
+            <span>Where Every Petal Tells a Story!</span>
+            <p>A bouquet is not just flowers, it's a collection of love, care and memories.✨</p>
+            <a href="#products" class="btn">Shop Now!</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h1 class="heading"><span>About</span> us</h1>
+
+        <div class="row">
+            <div class="video-container">
+                <video width="100%" autoplay muted loop>
+                    <source src="assets/videos/about-video.mp4" type="video/mp4">
+                </video>
+                <h3>Best flower sellers</h3>
+            </div>
+
+            <div class="content">
+                <h2>Why Choose Us?</h2>
+                <p>At <strong>Aévia Enchanting</strong>, we believe that flowers are more than just beautiful blooms; they are expressions of love, joy, and celebration. Our mission is to bring the magic of nature into your life through our exquisite floral arrangements.</p>
+                <p>Whether you're celebrating a special occasion or simply want to brighten someone's day, our handcrafted bouquets are designed to convey your heartfelt emotions.</p>
+                <a href="src/About.html" class="btn">Learn More!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="products" id="products">
+        <h1 class="heading">Latest <span>Products</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-22%</span>
+                <div class="image">
+                    <img src="assets/images/product-1.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>EverBloom Crochet Bouquet</h3>
+                    <div class="price">₱699 <span>₱899.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-25%</span>
+                <div class="image">
+                    <img src="assets/images/product-2.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Mocha Bloom Crochet Bouquet</h3>
+                    <div class="price">₱679.00 <span>₱899.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-23%</span>
+                <div class="image">
+                    <img src="assets/images/product-3.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Midnight Elegance Crochet Bouquet</h3>
+                    <div class="price">₱729.00 <span>₱949.00</span></div>
+                </div>
+            </div>
+
+            <div class="project-btn">
+                <a href="src/Products.html" class="btn">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <section class="review" id="review">
+        <h1 class="heading">Customer's <span>Review</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Ordering from Aévia Enchanting was such a breeze! The website is beautifully designed and easy to navigate. Checkout was quick, and I found everything I needed without any confusion.</p>
+
+                <div class="user">
+                    <img src="assets/images/user-1.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Chino Paay</h3>
+                        <span>Smooth and Hassle-Free Experience</span>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>I had a few questions before placing my order, and the Aévia Enchanting team responded right away. They were so polite and helpful — you can really tell they value every customer.</p>
+
+                <div class="user">
+                    <img src="assets/images/user-2.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Nilo Butay</h3>
+                        <span>Excellent Customer Service</span>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>The service from Aévia Enchanting exceeded my expectations! I received updates at every stage, and my order arrived earlier than expected. Everything was packed securely and with care.</p>
+
+                <div class="user">
+                    <img src="assets/images/user-3.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Lebleb Macalintal</h3>
+                        <span>Fast Delivery and Great Communication</span>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>I love the overall look of Aévia Enchanting's website — it's clean, classy, and easy to explore. The photos, descriptions, and layout perfectly match the brand's enchanting vibe.</p>
+
+                <div class="user">
+                    <img src="assets/images/user-4.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Gado Maderazo</h3>
+                        <span>Elegant and User-Friendly Website</span>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>From the moment I ordered until my item arrived, Aévia Enchanting handled everything so professionally. The process was smooth, transparent, and reliable. Definitely a five-star experience!</p>
+
+                <div class="user">
+                    <img src="assets/images/user-5.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Mary Grace Piattos</h3>
+                        <span>Professional and Reliable Service</span>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>What makes Aévia Enchanting stand out is their genuine care for customers. They even followed up after my order to make sure I was satisfied. That level of service is rare — highly recommended!</p>
+
+                <div class="user">
+                    <img src="assets/images/user-6.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Makati Fu. Kiko</h3>
+                        <span>Truly Cares About Their Customers</span>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+            </div>
+
+            <div class="review-btn">
+                <a href="src/Reviews.html" class="btn">View Product Reviews</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Icons -->
+    <section class="icons-container">
+        <div class="icon">
+            <i class="fas fa-truck"></i>
+            <div class="info">
+                <h3>Free Delivery</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+
+        <div class="icon">
+            <i class="fas fa-money-check-alt"></i>
+            <div class="info">
+                <h3>10 days returns</h3>
+                <span>moneyback guarantee</span>
+            </div>
+        </div>
+
+        <div class="icon">
+            <i class="fas fa-gift"></i>
+            <div class="info">
+                <h3>Offers and gift</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+
+        <div class="icon">
+            <i class="fas fa-landmark"></i>
+            <div class="info">
+                <h3>Secured payments</h3>
+                <span>protect by gcash</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="Index.html">Home</a>
+                <a href="src/About.html">About Us</a>
+                <a href="src/Products.html">Products</a>
+                <a href="src/Reviews.html">Review</a>
+                <a href="src/Contact.html">Contact Us</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra links</h3>
+                <a onclick="document.getElementById('login-01').style.display='block'">My account</a>
+                <a onclick="alert('Coming soon!')">My favorite</a>
+                <a onclick="alert('Coming soon!')">My cart</a>
+            </div>
+
+            <div class="box">
+                <h3>Locations</h3>
+                <p>General Santos City, South Cotabato</p>
+                <p>ZIP code: 9500</p>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <p>+63 912 345 6789</p>
+                <p>aeviaenchanting@gmail.com</p>
+                <p>General Santos City - 9500</p>
+                <img src="assets/images/paypal-1.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="footer-credit">
+        <div class="credit">© 2023–2025 Aévia Enchanting. <span>Established 2023.</span> All rights reserved.</div>
+    </footer>
+  
+</body>
+</html>

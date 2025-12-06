@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Honest customer reviews of Aévia Enchanting products. See what our clients say about our handcrafted bouquets, custom gifts, and unique floral creations.">
+    <meta name="keywords" content="Aévia Enchanting, customer reviews, testimonials, product feedback, handcrafted bouquets, handmade gifts, crochet flowers, artisan floral arrangements, unique gifts, GenSan business, Philippines">
+    <meta name="author" content="John Mark R. Kalugay">
+    <link rel="stylesheet" href="../cdn/webfonts/all.min.css">
+    <title>Reviews - Aévia Enchanting</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/AE.jpg">
+    <link rel="stylesheet" href="../Styles/AeviaEnStyles.css">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <a href="#" class="logo">Aévia Enchanting<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="../Index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Products.html">Product</a>
+            <a href="Reviews.html">Review</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <abbr title="Wish list"><a class="fas fa-heart" onclick="alert('Coming soon!')"></a></abbr>
+            <abbr title="Cart"><a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a></abbr>
+            <abbr title="User Account"><a class="fas fa-user" onclick="document.getElementById('login-01').style.display='block'"></a></abbr> 
+        </div>
+    </header>
+
+    <!--Modal-->
+    <div id="login-01" class="modal-01">
+        <a href="#close" class="modal-backdrop" onclick="document.getElementById('login-01').style.display='none'"></a>
+        <div class="modal-container-login">
+            <a href="#close" class="modal-close2" aria-label="Close" onclick="document.getElementById('login-01').style.display='none'">&times;</a>
+            <div class="modal-content">
+
+                <div class="modal-body-login">
+                    <div class="login-form-section">
+                        <div class="login-form">
+                            <h3>Login Form</h3>
+                            <form class="login-form-content" action="../MessageHTML/Loginform.html">
+                                <div class="form-group-login">
+                                    <label>Username</label>
+                                    <input type="text" name="username" placeholder="Enter Username" required>
+                                    <label>Password</label>
+                                    <input type="password" name="password" placeholder="Enter Password" required>
+                                </div>
+                                <label class="remember-me">
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me 
+                                </label>
+                                <span class="psw"><a href="#">Forgot Password?</a></span>
+                                <button type="submit" class="Submitbtn">Submit</button>
+
+                            </form>
+                            <div class="container">
+                                <span class="DNT">Don't have an account? <a href="#" class="refa" onclick="document.getElementById('login-01').style.display='none'; document.getElementById('register-01').style.display='block'">Sign up here</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <div id="register-01" class="modal-02">
+        <a href="#close" class="modal-backdrop" onclick="document.getElementById('register-01').style.display='none'"></a>
+        <div class="modal-container-login">
+            <a href="#close" class="modal-close2" aria-label="Close" onclick="document.getElementById('register-01').style.display='none'">&times;</a>
+            <div class="modal-content">
+
+                <div class="modal-body-login">
+                    <div class="login-form-section">
+                        <div class="login-form">
+                            <h3>Register Form</h3>
+                            <form class="login-form-content" action="../MessageHTML/Register.html">
+                                <div class="form-group-login">
+                                    <label>Username</label>
+                                    <input type="text" name="username" placeholder="Enter Username" required>
+                                    <label>Email</label>
+                                    <input type="email" name="email" placeholder="Enter Email" required>
+                                    <label>Password</label>
+                                    <input type="password" name="password" placeholder="Enter Password" required>
+                                    <label>Confirm Password</label>
+                                    <input type="password" name="password" placeholder="Enter Password" required>
+                                </div>
+                                <button type="submit" class="Submitbtn">Submit</button>
+
+                            </form>
+                            <div class="container">
+                                <span class="DNT">Have already an account? <a href="#" class="refa" onclick="document.getElementById('register-01').style.display='none'; document.getElementById('login-01').style.display='block'">Login here</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="products" id="products">
+        <h1 class="heading1"><span>Product</span> Reviews</h1>
+        <p class="subtitle">Click on any product to view reviews</p>
+
+        <div class="box-container">
+            <a href="#product-1" class="box">
+                <span class="discount">-22%</span>
+                <div class="image">
+                    <img src="../assets/images/product-1.jpg" alt="EverBloom Crochet Bouquet">
+                </div>
+                <div class="content">	
+                    <h3>EverBloom Crochet Bouquet</h3>
+                    <div class="price">₱699.00 <span>₱899.00</span></div>
+                    <div class="rating-summary">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-text">5.0 (3 reviews)</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#product-2" class="box">
+                <span class="discount">-25%</span>
+                <div class="image">
+                    <img src="../assets/images/product-2.jpg" alt="Mocha Bloom Crochet Bouquet">
+                </div>
+                <div class="content">
+                    <h3>Mocha Bloom Crochet Bouquet</h3>
+                    <div class="price">₱679.00 <span>₱899.00</span></div>
+                    <div class="rating-summary">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-text">5.0 (2 reviews)</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#product-3" class="box">
+                <span class="discount">-23%</span>
+                <div class="image">
+                    <img src="../assets/images/product-3.jpg" alt="Midnight Elegance Crochet Bouquet">
+                </div>
+                <div class="content">
+                    <h3>Midnight Elegance Crochet Bouquet</h3>
+                    <div class="price">₱729.00 <span>₱949.00</span></div>
+                    <div class="rating-summary">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-text">5.0 (2 reviews)</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#product-4" class="box">
+                <span class="discount">-18%</span>
+                <div class="image">
+                    <img src="../assets/images/productv-1.jpg" alt="Crimson Grace Vase">
+                </div>
+                <div class="content">
+                    <h3>Crimson Grace Vase</h3>
+                    <div class="price">₱805.00 <span>₱980.00</span></div>
+                    <div class="rating-summary">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-text">5.0 (1 review)</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#product-5" class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="../assets/images/Special-1.jpg" alt="Velare Lumière">
+                </div>
+                <div class="content">
+                    <h3>Velare Lumière</h3>
+                    <div class="price">₱705.00 <span>₱880.00</span></div>
+                    <div class="rating-summary">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-text">5.0 (1 review)</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#product-6" class="box">
+                <span class="discount">-16%</span>
+                <div class="image">
+                    <img src="../assets/images/productv-2.jpg" alt="Fleur d'Aurore">
+                </div>
+                <div class="content">
+                    <h3>Fleur d'Aurore</h3>
+                    <div class="price">₱805.00 <span>₱960.00</span></div>
+                    <div class="rating-summary">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="rating-text">4.0 (1 review)</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+    <!--Product Review Modals-->
+    <div id="product-1" class="modal">
+        <a href="#close" class="modal-backdrop"></a>
+        <div class="modal-container">
+            <a href="#close" class="modal-close" aria-label="Close">&times;</a>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../assets/images/product-1.jpg" alt="EverBloom Crochet Bouquet">
+                    <div class="modal-product-info">
+                        <h2>EverBloom Crochet Bouquet</h2>
+                        <div class="price">₱699.00 <span>₱899.00</span></div>
+                        <div class="rating-summary">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">5.0 (3 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="reviews-section">
+                        <h3>Customer Reviews</h3>
+                        
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <img src="../assets/images/user-1.jpg" alt="Carlo Mendez">
+                                    <div class="reviewer-details">
+                                        <h4>Chino Paay</h4>
+                                        <span class="date">October 15, 2024</span>
+                                    </div>
+                                </div>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                I ordered this for my girlfriend's birthday and she absolutely loved it! The colors are vibrant, the craftsmanship is impeccable, and it looks even better in person. Worth every peso!
+                            </div>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <img src="../assets/images/user-2.jpg" alt="Maria Santos">
+                                    <div class="reviewer-details">
+                                        <h4>Nilo Butay</h4>
+                                        <span class="date">October 20, 2024</span>
+                                    </div>
+                                </div>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                Beautiful bouquet! The quality exceeded my expectations. It arrived perfectly packaged and looks amazing. I've already recommended Aévia Enchanting to my friends!
+                            </div>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <img src="../assets/images/user-3.jpg" alt="James Rodriguez">
+                                    <div class="reviewer-details">
+                                        <h4>Lebleb Macalintal</h4>
+                                        <span class="date">October 25, 2024</span>
+                                    </div>
+                                </div>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                Perfect gift! The attention to detail is incredible. Each flower is handcrafted with care and you can really tell. My mom displays it proudly in her living room.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="add-review-section">
+                        <h3>Write Your Review</h3>
+                        <form class="add-review-form" action="../MessageHTML/Addrevnotif.html">
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Rating</label>
+                                <select name="rating" required>
+                                    <option value="">Select Rating</option>
+                                    <option value="5">⭐⭐⭐⭐⭐</option>
+                                    <option value="4">⭐⭐⭐⭐</option>
+                                    <option value="3">⭐⭐⭐</option>
+                                    <option value="2">⭐⭐</option>
+                                    <option value="1">⭐</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Your Review</label>
+                                <textarea placeholder="Share your experience with this product..." required></textarea>
+                            </div>
+                            <button type="submit" class="submit-review-btn">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-2" class="modal">
+        <a href="#close" class="modal-backdrop"></a>
+        <div class="modal-container">
+            <a href="#close" class="modal-close" aria-label="Close">&times;</a>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../assets/images/product-2.jpg" alt="Mocha Bloom Crochet Bouquet">
+                    <div class="modal-product-info">
+                        <h2>Mocha Bloom Crochet Bouquet</h2>
+                        <div class="price">₱679.00 <span>₱899.00</span></div>
+                        <div class="rating-summary">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">5.0 (2 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="reviews-section">
+                        <h3>Customer Reviews</h3>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <img src="../assets/images/user-4.jpg" alt="Ana Marie Garcia">
+                                    <div class="reviewer-details">
+                                        <h4>Gado Maderazo</h4>
+                                        <span class="date">October 18, 2024</span>
+                                    </div>
+                                </div>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                The Mocha Bloom is absolutely beautiful! The neutral brown tones match my home decor perfectly. The attention to detail in each flower is amazing. Best purchase ever!
+                            </div>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <img src="../assets/images/user-5.jpg" alt="Patricia Reyes">
+                                    <div class="reviewer-details">
+                                        <h4>Marry Grace Piattos</h4>
+                                        <span class="date">October 22, 2024</span>
+                                    </div>
+                                </div>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                Love the elegant and classy look! The quality is outstanding and it's a conversation starter whenever I have guests over. Highly recommend!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="add-review-section">
+                        <h3>Write Your Review</h3>
+                        <form class="add-review-form" action="../MessageHTML/Addrevnotif.html">
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Rating</label>
+                                <select name="rating" required>
+                                    <option value="">Select Rating</option>
+                                    <option value="5">⭐⭐⭐⭐⭐</option>
+                                    <option value="4">⭐⭐⭐⭐</option>
+                                    <option value="3">⭐⭐⭐</option>
+                                    <option value="2">⭐⭐</option>
+                                    <option value="1">⭐</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Your Review</label>
+                                <textarea placeholder="Share your experience with this product..." required></textarea>
+                            </div>
+                            <button type="submit" class="submit-review-btn">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-3" class="modal">
+        <a href="#close" class="modal-backdrop"></a>
+        <div class="modal-container">
+            <a href="#close" class="modal-close" aria-label="Close">&times;</a>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../assets/images/product-3.jpg" alt="Midnight Elegance Crochet Bouquet">
+                    <div class="modal-product-info">
+                        <h2>Midnight Elegance Crochet Bouquet</h2>
+                        <div class="price">₱729.00 <span>₱949.00</span></div>
+                        <div class="rating-summary">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">5.0 (2 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="reviews-section">
+                        <h3>Customer Reviews</h3>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <img src="../assets/images/user-6.jpg" alt="Sofia Reyes">
+                                    <div class="reviewer-details">
+                                        <h4>Makati Fu. Kiko</h4>
+                                        <span class="date">October 12, 2024</span>
+                                    </div>
+                                </div>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                The Midnight Elegance is stunning! The black flowers are so elegant and unique. I display it on my coffee table and everyone who visits asks where I got it. Highly recommend!
+                            </div>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <img src="../assets/images/user-7.jpg" alt="Gabriel Cruz">
+                                    <div class="reviewer-details">
+                                        <h4>Gabriel Cruz</h4>
+                                        <span class="date">October 28, 2024</span>
+                                    </div>
+                                </div>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                Bought this as a gift for a gothic-themed party and it was perfect! Very unique and beautifully crafted. The recipient loved it!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="add-review-section">
+                        <h3>Write Your Review</h3>
+                        <form class="add-review-form" action="../MessageHTML/Addrevnotif.html">
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Rating</label>
+                                <select name="rating" required>
+                                    <option value="">Select Rating</option>
+                                    <option value="5">⭐⭐⭐⭐⭐</option>
+                                    <option value="4">⭐⭐⭐⭐</option>
+                                    <option value="3">⭐⭐⭐</option>
+                                    <option value="2">⭐⭐</option>
+                                    <option value="1">⭐</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Your Review</label>
+                                <textarea placeholder="Share your experience with this product..." required></textarea>
+                            </div>
+                            <button type="submit" class="submit-review-btn">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-4" class="modal">
+        <a href="#close" class="modal-backdrop"></a>
+        <div class="modal-container">
+            <a href="#close" class="modal-close" aria-label="Close">&times;</a>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../assets/images/productv-1.jpg" alt="Crimson Grace Vase">
+                    <div class="modal-product-info">
+                        <h2>Crimson Grace Vase</h2>
+                        <div class="price">₱805.00 <span>₱980.00</span></div>
+                        <div class="rating-summary">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">5.0 (1 review)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="reviews-section">
+                        <h3>Customer Reviews</h3>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <img src="../assets/images/user-8.jpg" alt="Jessica Torres">
+                                    <div class="reviewer-details">
+                                        <h4>Humba Roque</h4>
+                                        <span class="date">October 16, 2024</span>
+                                    </div>
+                                </div>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                I bought this as a gift for my mom, and she cried happy tears! The arrangement is gorgeous, the vase is beautiful, and the fact that it lasts forever makes it extra special.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="add-review-section">
+                        <h3>Write Your Review</h3>
+                        <form class="add-review-form" action="../MessageHTML/Addrevnotif.html">
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Rating</label>
+                                <select name="rating" required>
+                                    <option value="">Select Rating</option>
+                                    <option value="5">⭐⭐⭐⭐⭐</option>
+                                    <option value="4">⭐⭐⭐⭐</option>
+                                    <option value="3">⭐⭐⭐</option>
+                                    <option value="2">⭐⭐</option>
+                                    <option value="1">⭐</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Your Review</label>
+                                <textarea placeholder="Share your experience with this product..." required></textarea>
+                            </div>
+                            <button type="submit" class="submit-review-btn">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-5" class="modal">
+        <a href="#close" class="modal-backdrop"></a>
+        <div class="modal-container">
+            <a href="#close" class="modal-close" aria-label="Close">&times;</a>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../assets/images/Special-1.jpg" alt="Velare Lumière">
+                    <div class="modal-product-info">
+                        <h2>Velare Lumière</h2>
+                        <div class="price">₱705.00 <span>₱880.00</span></div>
+                        <div class="rating-summary">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">5.0 (1 review)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="reviews-section">
+                        <h3>Customer Reviews</h3>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <img src="../assets/images/user-9.jpg" alt="Rafael Domingo">
+                                    <div class="reviewer-details">
+                                        <h4>Nicolat Toreret</h4>
+                                        <span class="date">October 19, 2024</span>
+                                    </div>
+                                </div>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                 I ordered this in memory of my late mother and brought it when I visited her grave. The craftsmanship is incredible, and the arrangement looks so elegant. Thank you, Aévia Enchanting, for creating something so special.                            </div>
+                        </div>
+                    </div>
+
+                    <div class="add-review-section">
+                        <h3>Write Your Review</h3>
+                        <form class="add-review-form" action="../MessageHTML/Addrevnotif.html">
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Rating</label>
+                                <select name="rating" required>
+                                    <option value="">Select Rating</option>
+                                    <option value="5">⭐⭐⭐⭐⭐</option>
+                                    <option value="4">⭐⭐⭐⭐</option>
+                                    <option value="3">⭐⭐⭐</option>
+                                    <option value="2">⭐⭐</option>
+                                    <option value="1">⭐</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Your Review</label>
+                                <textarea placeholder="Share your experience with this product..." required></textarea>
+                            </div>
+                            <button type="submit" class="submit-review-btn">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-6" class="modal">
+        <a href="#close" class="modal-backdrop"></a>
+        <div class="modal-container">
+            <a href="#close" class="modal-close" aria-label="Close">&times;</a>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../assets/images/productv-2.jpg" alt="Fleur d'Aurore">
+                    <div class="modal-product-info">
+                        <h2>Fleur d'Aurore</h2>
+                        <div class="price">₱805.00 <span>₱960.00</span></div>
+                        <div class="rating-summary">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.0 (1 review)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="reviews-section">
+                        <h3>Customer Reviews</h3>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <img src="../assets/images/user-10.jpg" alt="Isabelle Fernandez">
+                                    <div class="reviewer-details">
+                                        <h4>Tyna Murane</h4>
+                                        <span class="date">October 21, 2024</span>
+                                    </div>
+                                </div>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                The Fleur d'Aurore is gorgeous! The pastel colors are dreamy and romantic. Beautiful packaging. Only minor issue was a small loose thread, but overall very satisfied!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="add-review-section">
+                        <h3>Write Your Review</h3>
+                        <form class="add-review-form" action="../MessageHTML/Addrevnotif.html">
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Rating</label>
+                                <select name="rating" required>
+                                    <option value="">Select Rating</option>
+                                    <option value="5">⭐⭐⭐⭐⭐</option>
+                                    <option value="4">⭐⭐⭐⭐</option>
+                                    <option value="3">⭐⭐⭐</option>
+                                    <option value="2">⭐⭐</option>
+                                    <option value="1">⭐</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Your Review</label>
+                                <textarea placeholder="Share your experience with this product..." required></textarea>
+                            </div>
+                            <button type="submit" class="submit-review-btn">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="icons-container">
+        <div class="icon">
+            <i class="fas fa-truck"></i>
+            <div class="info">
+                <h3>Free Delivery</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+
+        <div class="icon">
+            <i class="fas fa-money-check-alt"></i>
+            <div class="info">
+                <h3>10 days returns</h3>
+                <span>moneyback guarantee</span>
+            </div>
+        </div>
+
+        <div class="icon">
+            <i class="fas fa-gift"></i>
+            <div class="info">
+                <h3>Offers and gift</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+
+        <div class="icon">
+            <i class="fas fa-landmark"></i>
+            <div class="info">
+                <h3>Secured payments</h3>
+                <span>protect by gcash</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="../Index.html">Home</a>
+                <a href="About.html">About Us</a>
+                <a href="Products.html">Products</a>
+                <a href="Reviews.html">Review</a>
+                <a href="Contact.html">Contact Us</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra links</h3>
+                <a onclick="document.getElementById('login-01').style.display='block'">My account</a>
+                <a onclick="alert('Coming soon!')">My favorite</a>
+                <a onclick="alert('Coming soon!')">My cart</a>
+            </div>
+
+            <div class="box">
+                <h3>Locations</h3>
+                <p>General Santos City, South Cotabato</p>
+                <p>ZIP code: 9500</p>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <p>+63 912 345 6789</p>
+                <p>aeviaenchanting@gmail.com</p>
+                <p>General Santos City - 9500</p>
+                <img src="../assets/images/paypal-1.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer-credit">
+        <div class="credit">© 2023–2025 Aévia Enchanting. <span>Established 2023.</span> All rights reserved.</div>
+    </footer>
+</body>
+</html>

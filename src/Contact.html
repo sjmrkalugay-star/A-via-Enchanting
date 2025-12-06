@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Get in touch with Aévia Enchanting! Explore our business hours, helpful tips, location map, frequently asked questions, and send us a message through our contact form.">
+        <meta name="keywords" content="contact, customer service, business hours, location map, FAQ, tips, custom bouquets, handcrafted flowers, handmade gifts, Aévia Enchanting, General Santos City, floral arrangements, bouquet inquiry">
+        <meta name="author" content="John Mark R. Kalugay">
+        <link rel="stylesheet" href="../cdn/webfonts/all.min.css">
+        <title>Contact Us - Aévia Enchanting</title>
+        <link rel="icon" type="image/x-icon" href="../assets/images/AE.jpg">
+        <link rel="stylesheet" href="../Styles/AeviaEnStyles.css">
+    </head> 
+
+<body class="contact-page">
+    <!-- Header Section-->
+    <header>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <a href="AeviaEnchanting.html" class="logo">Aévia Enchanting<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="../Index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Products.html">Product</a>
+            <a href="Reviews.html">Review</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <abbr title="Wish list"><a class="fas fa-heart" onclick="alert('Coming soon!')"></a></abbr>
+            <abbr title="Cart"><a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a></abbr>
+            <abbr title="User Account"><a class="fas fa-user" onclick="document.getElementById('login-01').style.display='block'"></a></abbr> 
+        </div>
+    </header>
+
+    <!--Modal-->
+    <div id="login-01" class="modal-01">
+        <a href="#close" class="modal-backdrop" onclick="document.getElementById('login-01').style.display='none'"></a>
+        <div class="modal-container-login">
+            <a href="#close" class="modal-close2" aria-label="Close" onclick="document.getElementById('login-01').style.display='none'">&times;</a>
+            <div class="modal-content">
+
+                <div class="modal-body-login">
+                    <div class="login-form-section">
+                        <div class="login-form">
+                            <h3>Login Form</h3>
+                            <form class="login-form-content" action="../MessageHTML/Loginform.html">
+                                <div class="form-group-login">
+                                    <label>Username</label>
+                                    <input type="text" name="username" placeholder="Enter Username" required>
+                                    <label>Password</label>
+                                    <input type="password" name="password" placeholder="Enter Password" required>
+                                </div>
+                                <label class="remember-me">
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me 
+                                </label>
+                                <span class="psw"><a href="#">Forgot Password?</a></span>
+                                <button type="submit" class="Submitbtn">Submit</button>
+
+                            </form>
+                            <div class="container">
+                                <span class="DNT">Don't have an account? <a href="#" class="refa" onclick="document.getElementById('login-01').style.display='none'; document.getElementById('register-01').style.display='block'">Sign up here</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <div id="register-01" class="modal-02">
+        <a href="#close" class="modal-backdrop" onclick="document.getElementById('register-01').style.display='none'"></a>
+        <div class="modal-container-login">
+            <a href="#close" class="modal-close2" aria-label="Close" onclick="document.getElementById('register-01').style.display='none'">&times;</a>
+            <div class="modal-content">
+
+                <div class="modal-body-login">
+                    <div class="login-form-section">
+                        <div class="login-form">
+                            <h3>Register Form</h3>
+                            <form class="login-form-content" action="../MessageHTML/Register.html">
+                                <div class="form-group-login">
+                                    <label>Username</label>
+                                    <input type="text" name="username" placeholder="Enter Username" required>
+                                    <label>Email</label>
+                                    <input type="email" name="email" placeholder="Enter Email" required>
+                                    <label>Password</label>
+                                    <input type="password" name="password" placeholder="Enter Password" required>
+                                    <label>Confirm Password</label>
+                                    <input type="password" name="password" placeholder="Enter Password" required>
+                                </div>
+                                <button type="submit" class="Submitbtn">Submit</button>
+
+                            </form>
+                            <div class="container">
+                                <span class="DNT">Have already an account? <a href="#" class="refa" onclick="document.getElementById('register-01').style.display='none'; document.getElementById('login-01').style.display='block'">Login here</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact section-->
+    <section class="contact" id="contact">
+        <h1 class="heading">Contact<span> Us</span></h1>
+
+        <div class="row">
+            <form action="../MessageHTML/thankyouMSG.html">
+                <h3>Send us a Message</h3>
+                <p>Have a question or custom order request? We'd love to hear from you!</p>
+
+                <input type="text" placeholder="Your Full Name" class="box" required>
+                <input type="email" placeholder="Your Email Address" class="box" required>
+                <input type="tel" placeholder="Your Phone Number (Optional)" class="box">
+
+                <select class="box" required>
+                    <option value="" disabled selected>Select Inquiry Type</option>
+                    <option value="custom-order">Custom Order Request</option>
+                    <option value="product-inquiry">Product Inquiry</option>
+                    <option value="delivery">Delivery Information</option>
+                    <option value="feedback">Feedback & Suggestions</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <textarea placeholder="Your Message" cols="30" rows="5" class="box" required></textarea>
+
+                <div class="btn-container">
+                    <input type="submit" value="Send Message" class="btn">
+                    <input type="reset" value="Clear Form" class="btn">
+                </div>
+            </form>
+
+            <div class="image">
+                <div class="content">
+                    <h3>Visit Our Shop</h3>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <strong>Aévia Enchanting</strong> is located in Barangay Tinagacan, General Santos City, South Cotabato.
+                    </p>
+                    <p>
+                        Our establishment serves as the creative space where each handcrafted bouquet is designed with precision and elegance. We welcome walk-in customers, but appointments are recommended to ensure personalized service.
+                    </p>
+                    <p>
+                        <i class="fas fa-clock"></i>
+                        <strong>Pro Tip:</strong> Schedule a visit to see our workshop and discuss custom designs in person!
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.8011224277026!2d125.24019697944324!3d6.209665920097797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f777004897de75%3A0x24b9ced03ae0b2b6!2sAevia%20Enchantinh!5e0!3m2!1sen!2sph!4v1761140783867!5m2!1sen!2sph" width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-details">
+            <div class="box-container">
+                <div class="box">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>
+                            <i class="fas fa-phone-alt"></i>
+                            <strong>Call/Text:</strong> +63 912 345 6789
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <strong>Email:</strong> <a href="aeviaenchanting@gmail.com" target="_blank">aeviaenchanting@gmail.com</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-map-pin"></i>
+                            <strong>Address:</strong> Barangay Tinagacan, General Santos City, South Cotabato 9500
+                        </p>
+                        <p>
+                            <i class="fas fa-comment-dots"></i>
+                            We typically respond within 24 hours during business days. For urgent inquiries, please call us directly.
+                        </p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/Bouquet4yu" target="_blank" class="fab fa-facebook-f" title="Follow us on Facebook"></a>
+                            <a href="https://www.instagram.com/aevia_enchanting/" target="_blank" class="fab fa-instagram" title="Follow us on Instagram"></a>
+                            <a href="https://www.tiktok.com/@bouquet4you2" target="_blank" class="fa-brands fa-tiktok" title="Follow us on TikTok"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="business-hours">
+                        <h3>Business Hours</h3>
+                        <p><i class="far fa-calendar-check"></i> <strong>Monday – Friday:</strong> 9:00 AM – 6:00 PM</p>
+                        <p><i class="far fa-calendar-check"></i> <strong>Saturday:</strong> 10:00 AM – 4:00 PM</p>
+                        <p><i class="far fa-calendar-times"></i> <strong>Sunday:</strong> Closed</p>
+                        <p>
+                            <i class="fas fa-info-circle"></i>
+                            <strong>Note:</strong> We're closed on major holidays. Check our social media for any schedule changes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h1 class="heading">Frequently <span>Asked Questions</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <h3>How do I place a custom order?</h3>
+                <p>Simply fill out the contact form above with your requirements, or reach out to us via phone, email, or social media. We'll discuss your vision, color preferences, and any special requests to create the perfect bouquet for you.</p>
+            </div>
+
+            <div class="box">
+                <h3>What areas do you deliver to?</h3>
+                <p>We offer free delivery within General Santos City and surrounding areas. For deliveries outside our regular service area, please contact us for shipping arrangements and rates.</p>
+            </div>
+
+            <div class="box">
+                <h3>How long does it take to make a custom bouquet?</h3>
+                <p>Most custom orders take 3-5 business days to complete, depending on complexity and current order volume. Rush orders may be accommodated for an additional fee—contact us to discuss your timeline.</p>
+            </div>
+
+            <div class="box">
+                <h3>Can I see samples before ordering?</h3>
+                <p>Absolutely! Visit our shop during business hours to see our portfolio and current displays. You can also browse our Instagram and Facebook pages for recent creations and customer photos.</p>
+            </div>
+
+            <div class="box">
+                <h3>What payment methods do you accept?</h3>
+                <p>We accept GCash, bank transfers, and cash payments. For online orders, payment confirmation is required before we begin processing your custom bouquet.</p>
+            </div>
+
+            <div class="box">
+                <h3>Do you offer gift wrapping?</h3>
+                <p>Yes! All our bouquets come beautifully wrapped and ready to gift at no additional charge. We can also include personalized cards upon request.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Icons-->
+    <section class="icons-container">
+        <div class="icon">
+            <i class="fas fa-truck"></i>
+            <div class="info">
+                <h3>Free Delivery</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+
+        <div class="icon">
+            <i class="fas fa-money-check-alt"></i>
+            <div class="info">
+                <h3>10 days returns</h3>
+                <span>moneyback guarantee</span>
+            </div>
+        </div>
+
+        <div class="icon">
+            <i class="fas fa-gift"></i>
+            <div class="info">
+                <h3>Offers and gift</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+
+        <div class="icon">
+            <i class="fas fa-landmark"></i>
+            <div class="info">
+                <h3>Secured payments</h3>
+                <span>protect by gcash</span>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer Section-->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="../Index.html">Home</a>
+                <a href="About.html">About Us</a>
+                <a href="Products.html">Products</a>
+                <a href="Reviews.html">Review</a>
+                <a href="Contact.html">Contact Us</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra links</h3>
+                <a onclick="document.getElementById('login-01').style.display='block'">My account</a>
+                <a onclick="alert('Coming soon!')">My favorite</a>
+                <a onclick="alert('Coming soon!')">My cart</a>
+            </div>
+
+            <div class="box">
+                <h3>Locations</h3>
+                <p>General Santos City, South Cotabato</p>
+                <p>ZIP code: 9500</p>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <p>+63 912 345 6789</p>
+                <p>aeviaenchanting@gmail.com</p>
+                <p>General Santos City - 9500</p>
+                <img src="../assets/images/paypal-1.png" alt="" >
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-credit">
+        <div class="credit">© 2023–2025 Aévia Enchanting. <span>Established 2023.</span> All rights reserved.</div>
+    </footer>
+</body>
+</html>

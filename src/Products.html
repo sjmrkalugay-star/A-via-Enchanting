@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Aévia Enchanting’s wide range of products! Explore our latest products, other unique items, and limited-edition handcrafted bouquets and floral arrangements.">
+    <meta name="keywords" content="Aévia Enchanting, products, latest products, other products, limited edition, handcrafted bouquets, handmade flowers, artisan floral arrangements, crochet bouquets, gift shop, unique gifts, General Santos City, GenSan local business">
+    <meta name="author" content="John Mark R. Kalugay">
+    <link rel="stylesheet" href="../cdn/webfonts/all.min.css">
+    <title>Products - Aévia Enchanting</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/AE.jpg">
+    <link rel="stylesheet" href="../Styles/AeviaEnStyles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <a href="#" class="logo">Aévia Enchanting<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="../Index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Products.html">Product</a>
+            <a href="Reviews.html">Review</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <abbr title="Wish list"><a class="fas fa-heart" onclick="alert('Coming soon!')"></a></abbr>
+            <abbr title="Cart"><a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a></abbr>
+            <abbr title="User Account"><a class="fas fa-user" onclick="document.getElementById('login-01').style.display='block'"></a></abbr> 
+        </div>
+    </header>
+
+    <!--Modal-->
+    <div id="login-01" class="modal-01">
+        <a href="#close" class="modal-backdrop" onclick="document.getElementById('login-01').style.display='none'"></a>
+        <div class="modal-container-login">
+            <a href="#close" class="modal-close2" aria-label="Close" onclick="document.getElementById('login-01').style.display='none'">&times;</a>
+            <div class="modal-content">
+
+                <div class="modal-body-login">
+                    <div class="login-form-section">
+                        <div class="login-form">
+                            <h3>Login Form</h3>
+                            <form class="login-form-content" action="../MessageHTML/Loginform.html">
+                                <div class="form-group-login">
+                                    <label>Username</label>
+                                    <input type="text" name="username" placeholder="Enter Username" required>
+                                    <label>Password</label>
+                                    <input type="password" name="password" placeholder="Enter Password" required>
+                                </div>
+                                <label class="remember-me">
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me 
+                                </label>
+                                <span class="psw"><a href="#">Forgot Password?</a></span>
+                                <button type="submit" class="Submitbtn">Submit</button>
+
+                            </form>
+                            <div class="container">
+                                <span class="DNT">Don't have an account? <a href="#" class="refa" onclick="document.getElementById('login-01').style.display='none'; document.getElementById('register-01').style.display='block'">Sign up here</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <div id="register-01" class="modal-02">
+        <a href="#close" class="modal-backdrop" onclick="document.getElementById('register-01').style.display='none'"></a>
+        <div class="modal-container-login">
+            <a href="#close" class="modal-close2" aria-label="Close" onclick="document.getElementById('register-01').style.display='none'">&times;</a>
+            <div class="modal-content">
+
+                <div class="modal-body-login">
+                    <div class="login-form-section">
+                        <div class="login-form">
+                            <h3>Register Form</h3>
+                            <form class="login-form-content" action="../MessageHTML/Register.html">
+                                <div class="form-group-login">
+                                    <label>Username</label>
+                                    <input type="text" name="username" placeholder="Enter Username" required>
+                                    <label>Email</label>
+                                    <input type="email" name="email" placeholder="Enter Email" required>
+                                    <label>Password</label>
+                                    <input type="password" name="password" placeholder="Enter Password" required>
+                                    <label>Confirm Password</label>
+                                    <input type="password" name="password" placeholder="Enter Password" required>
+                                </div>
+                                <button type="submit" class="Submitbtn">Submit</button>
+
+                            </form>
+                            <div class="container">
+                                <span class="DNT">Have already an account? <a href="#" class="refa" onclick="document.getElementById('register-01').style.display='none'; document.getElementById('login-01').style.display='block'">Login here</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup1" class="overlay">
+  <div class="popup">
+    <h2>Coming Soon!</h2>
+    <a href="#" class="close">&times;</a>
+    <p>This feature will be available soon.</p>
+  </div>
+</div>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h1 class="heading">Latest <span>Products</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-22%</span>
+                <div class="image">
+                    <img src="../assets/images/product-1.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" href="#popup1" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>EverBloom Crochet Bouquet</h3>
+                    <div class="price">₱699.00 <span>₱899.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-25%</span>
+                <div class="image">
+                    <img src="../assets/images/product-2.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Mocha Bloom Crochet Bouquet</h3>
+                    <div class="price">₱679.00 <span>₱899.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-23%</span>
+                <div class="image">
+                    <img src="../assets/images/product-3.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Midnight Elegance Crochet Bouquet</h3>
+                    <div class="price">₱729.00 <span>₱949.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-18%</span>
+                <div class="image">
+                    <img src="../assets/images/productv-1.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Crimson Grace Vase</h3>
+                    <div class="price">₱805.00 <span>₱980.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="../assets/images/Special-1.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Velare Lumière</h3>
+                    <div class="price">₱705.00 <span>₱880.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-16%</span>
+                <div class="image">
+                    <img src="../assets/images/productv-2.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Fleur d'Aurore</h3>
+                    <div class="price">₱805.00 <span>₱960.00</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Products -->
+    <section class="products" id="products">
+        <h1 class="heading"><span>Other</span> Products</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-6%</span>
+                <div class="image">
+                    <img src="../assets/images/product-4.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Golden Glow Crochet Bouquet</h3>
+                    <div class="price">₱849.00 <span>₱899.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="../assets/images/product-5.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Lavender Luxe Crochet Bouquet</h3>
+                    <div class="price">₱899.00 <span>₱949.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="../assets/images/product-6.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Sunshine Harmony Crochet Bouquet</h3>
+                    <div class="price">₱949.00 <span>₱999.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-8%</span>
+                <div class="image">
+                    <img src="../assets/images/product-7.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Sunset Chenille Bouquet</h3>
+                    <div class="price">₱829.00 <span>₱899.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-7%</span>
+                <div class="image">
+                    <img src="../assets/images/product-8.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Café Solace Chenille Bouquet</h3>
+                    <div class="price">₱879.00 <span>₱949.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-8%</span>
+                <div class="image">
+                    <img src="../assets/images/product-9.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Sunlit Harmony Bouquet</h3>
+                    <div class="price">₱899.00 <span>₱979.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-6%</span>
+                <div class="image">
+                    <img src="../assets/images/product-10.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Autumn Serenade Bouquet</h3>
+                    <div class="price">₱879.00 <span>₱939.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-7%</span>
+                <div class="image">
+                    <img src="../assets/images/product-11.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Crimson Devotion Bouquet</h3>
+                    <div class="price">₱889.00 <span>₱959.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-7%</span>
+                <div class="image">
+                    <img src="../assets/images/product-12.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Verdant Serenity Bouquet</h3>
+                    <div class="price">₱699.00 <span>₱749.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="../assets/images/product-13.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Golden Radiance Bouquet</h3>
+                    <div class="price">₱629.00 <span>₱699.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-8%</span>
+                <div class="image">
+                    <img src="../assets/images/product-14.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Rosé Serenade Bouquet</h3>
+                    <div class="price">₱735.00 <span>₱799.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-8%</span>
+                <div class="image">
+                    <img src="../assets/images/product-15.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Mocha Bloom Elegance</h3>
+                    <div class="price">₱765.00 <span>₱829.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-9%</span>
+                <div class="image">
+                    <img src="../assets/images/product-16.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Scarlet Symphony Bouquet</h3>
+                    <div class="price">₱745.00 <span>₱820.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-8%</span>
+                <div class="image">
+                    <img src="../assets/images/product-17.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Scarlet Symphony Bouquet</h3>
+                    <div class="price">₱745.00 <span>₱820.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-9%</span>
+                <div class="image">
+                    <img src="../assets/images/product-18.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a class="fas fa-heart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-shopping-cart" onclick="alert('Coming soon!')"></a>
+                    <a class="fas fa-share" onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Emerald Whispers Bouquet</h3>
+                    <div class="price">₱795.00 <span>₱870.00</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Limited Products-->
+<section class="products" id="products">
+        <h1 class="heading">Limited  <span> Products</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="../assets/images/productpot-1.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a  class="fas fa-heart"  onclick="alert('Coming soon!')"></a>
+                    <a  class="fas fa-shopping-cart"  onclick="alert('Coming soon!')"></a>
+                    <a  class="fas fa-share"  onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Golden Charm</h3>
+                    <div class="price">₱235.00 <span>₱260.00</span></div>
+                </div>
+            </div>
+
+             <div class="box">
+                <span class="discount">-11%</span>
+                <div class="image">
+                    <img src="../assets/images/productpot-2.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a  class="fas fa-heart"  onclick="alert('Coming soon!')"></a>
+                    <a  class="fas fa-shopping-cart"  onclick="alert('Coming soon!')"></a>
+                    <a  class="fas fa-share"  onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Azure Bloom</h3>
+                    <div class="price">₱245.00 <span>₱275.00</span></div>
+                </div>
+            </div>
+
+             <div class="box">
+                <span class="discount">-9%</span>
+                <div class="image">
+                    <img src="../assets/images/productpot-3.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a  class="fas fa-heart"  onclick="alert('Coming soon!')"></a>
+                    <a  class="fas fa-shopping-cart"  onclick="alert('Coming soon!')"></a>
+                    <a  class="fas fa-share"  onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Rosy Delight</h3>
+                    <div class="price">₱240.00 <span>₱265.00</span></div>
+                </div>
+            </div>
+
+             <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="../assets/images/productpot-4.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <a  class="fas fa-heart"  onclick="alert('Coming soon!')"></a>
+                    <a  class="fas fa-shopping-cart"  onclick="alert('Coming soon!')"></a>
+                    <a  class="fas fa-share"  onclick="alert('Coming soon!')"></a>
+                </div>
+                <div class="content">
+                    <h3>Sunny Meadow</h3>
+                    <div class="price">₱260.00 <span>₱290.00</span></div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- Icons -->
+    <section class="icons-container">
+        <div class="icon">
+            <i class="fas fa-truck"></i>
+            <div class="info">
+                <h3>Free Delivery</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+
+        <div class="icon">
+            <i class="fas fa-money-check-alt"></i>
+            <div class="info">
+                <h3>10 days returns</h3>
+                <span>moneyback guarantee</span>
+            </div>
+        </div>
+
+        <div class="icon">
+            <i class="fas fa-gift"></i>
+            <div class="info">
+                <h3>Offers and gift</h3>
+                <span>on all orders</span>
+            </div>
+        </div>
+
+        <div class="icon">
+            <i class="fas fa-landmark"></i>
+            <div class="info">
+                <h3>Secured payments</h3>
+                <span>protect by gcash</span>
+            </div>
+        </div>
+    </section>
+
+<!--Footer Section-->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="../Index.html">Home</a>
+                <a href="About.html">About Us</a>
+                <a href="Products.html">Products</a>
+                <a href="Reviews.html">Review</a>
+                <a href="Contact.html">Contact Us</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra links</h3>
+                <a onclick="document.getElementById('login-01').style.display='block'">My account</a>
+                <a onclick="alert('Coming soon!')">My favorite</a>
+                <a onclick="alert('Coming soon!')">My cart</a>
+            </div>
+
+            <div class="box">
+                <h3>Locations</h3>
+                <p>General Santos City, South Cotabato</p>
+                <p>ZIP code: 9500</p>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <p>+63 912 345 6789</p>
+                <p>aeviaenchanting@gmail.com</p>
+                <p>General Santos City - 9500</p>
+                <img src="../assets/images/paypal-1.png" alt="" >
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer-credit">
+        <div class="credit">© 2023–2025 Aévia Enchanting. <span>Established 2023.</span> All rights reserved.</div>
+    </footer>
+</body>
+</html>
